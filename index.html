@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio | Mohammed Soaib Khan</title>
+    <meta name="description" content="Interactive developer portfolio: About, Skills, Projects, Contact." />
+    <link rel="icon" href="./assets/favicon-zZUxbGqI.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" crossorigin href="./assets/index-DipccHhx.css">
+  </head>
+  <body>
+    <div class="screen-saver" aria-hidden="true"></div>
+    <header class="site-header" data-elevate>
+      <nav class="nav container">
+        <a href="#hero" class="brand" title="Go to top"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+DQogIDxkZWZzPg0KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPg0KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhiNWNmNiIvPg0KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDZiNmQ0Ii8+DQogICAgPC9saW5lYXJHcmFkaWVudD4NCiAgPC9kZWZzPg0KICA8cmVjdCB4PSI0IiB5PSI0IiB3aWR0aD0iNTYiIGhlaWdodD0iNTYiIHJ4PSIxMiIgZmlsbD0idXJsKCNnKSIvPg0KICA8dGV4dCB4PSI1MCUiIHk9IjUyJSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIyOCIgZm9udC1mYW1pbHk9IkludGVyLFNlZ29lIFVJLEFyaWFsIiBmaWxsPSIjZmZmZmZmIiBmb250LXdlaWdodD0iODAwIj5NU0s8L3RleHQ+DQo8L3N2Zz4NCg0KDQo=" alt="MSK" class="brand-icon" /> Mohammed <span>Soaib Khan</span></a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://www.linkedin.com/in/mohammed-soaib-khan-7b35a633b" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/MskV0" target="_blank" rel="noreferrer" aria-label="GitHub">GitHub</a></li>
+          <li><button id="themeToggle" class="btn btn-ghost" aria-label="Toggle theme">🌙</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="section hero reveal" data-anim="fade-up">
+        <div class="container grid-2">
+          <div>
+            <h1 class="display">Hi, I’m <span class="accent">Mohammed Soaib Khan</span></h1>
+            <p class="lead">Frontend developer with a growing focus on cybersecurity—crafting performant, secure, and accessible web experiences.</p>
+            <ul class="chips" id="heroSkills" style="margin-top:.5rem"></ul>
+            <div class="cta">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section id="about" class="section reveal" data-anim="zoom-in">
+        <div class="container">
+          <h2>About</h2>
+          <div class="about">
+            <p>
+              I’m <strong>Mohammed Soaib Khan</strong>, a frontend developer exploring <strong>cybersecurity</strong>. I care about building bold, fast, and secure interfaces that respect users and their data.
+            </p>
+            <p>
+              Currently focused on <span class="pill">Web App Security</span><span class="pill">UI Engineering</span><span class="pill">Performance</span><span class="pill">JavaScript</span>. Always learning. Always shipping.
+            </p>
+            <p class="lead"><span class="bounce">Let’s build something excellent.</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section reveal" data-anim="slide-right">
+        <div class="container">
+          <h2>Skills</h2>
+          <ul class="chips" id="skillsList">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>GSAP</li>
+            <li>Git</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="section reveal" data-anim="fade-up">
+        <div class="container">
+          <h2>Projects</h2>
+          <div id="projectsGrid" class="projects-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section reveal" data-anim="bounce-in">
+        <div class="container">
+          <h2>Contact</h2>
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required />
+              <span class="error" data-for="name"></span>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+              <span class="error" data-for="email"></span>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <span class="error" data-for="message"></span>
+            </div>
+            <button class="btn btn-primary" type="submit">Send</button>
+            <p id="formStatus" role="status" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Mohammed Soaib Khan · <a href="https://github.com/MskV0" target="_blank" rel="noreferrer">GitHub</a> · <a href="https://www.linkedin.com/in/mohammed-soaib-khan-7b35a633b" target="_blank" rel="noreferrer">LinkedIn</a></p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+  </html>
+
+
