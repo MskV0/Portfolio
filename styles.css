@@ -86,21 +86,20 @@ body {
   width: min(1100px, 92%);
   margin: auto;
 }
-<<<<<<< HEAD
+
 /* REPLACE your existing .site-header CSS with this: */
 
 .site-header {
   position: sticky; /* Keep sticky for desktop */
-=======
+
 .site-header {
   position: sticky;
->>>>>>> 0df93327eea0437a85d29e39061e000e00784d1d
+
   top: 0;
   backdrop-filter: saturate(1.5) blur(8px);
   background: color-mix(in oklab, var(--surface), transparent 30%);
   border-bottom: 1px solid var(--ring);
   z-index: 50;
-<<<<<<< HEAD
   transition: transform 0.3s ease-in-out; /* Add smooth transition */
   transform: translateY(0); /* Add transform property */
 }
@@ -120,9 +119,9 @@ body {
   }
 }
 
-=======
+
 }
->>>>>>> 0df93327eea0437a85d29e39061e000e00784d1d
+
 .nav {
   display: flex;
   align-items: center;
