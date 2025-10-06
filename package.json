@@ -1,0 +1,20 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "Interactive Portfolio (HTML/CSS/JS)",
+  "main": "script.js",
+  "scripts": {
+    "dev": "vite --port 5173",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "deploy": "npm run build && echo 'Build ready for Pages'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "vite": "^7.1.9"
+  }
+}
