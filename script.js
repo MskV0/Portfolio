@@ -23,8 +23,11 @@ if (navToggle && navList) {
   });
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 0df93327eea0437a85d29e39061e000e00784d1d
 // Smooth scroll behavior
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
@@ -220,6 +223,7 @@ document.addEventListener('keydown', (e) => {
   window.open(url, '_blank', 'noopener');
 });
 
+<<<<<<< HEAD
 // Add this code to the END of your script.js file
 
 // Mobile navbar hide/show on scroll
@@ -267,3 +271,5 @@ window.addEventListener('resize', () => {
     header.style.transform = 'translateY(0)';
   }
 }, { passive: true });
+=======
+>>>>>>> 0df93327eea0437a85d29e39061e000e00784d1d
