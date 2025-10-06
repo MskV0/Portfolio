@@ -217,7 +217,6 @@ document.addEventListener('keydown', (e) => {
   el.classList.add('tap');
   window.open(url, '_blank', 'noopener');
 });
-
 // Mobile navbar hide/show on scroll
 let lastScrollPosition = 0;
 const header = document.querySelector('.site-header');
