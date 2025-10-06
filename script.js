@@ -120,6 +120,21 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 // Load data
 loadProjects();
+async function loadProjects() {
+  const grid = document.getElementById('projectsGrid');
+  if (!grid) return;
+  try {
+    const res = await fetch('./data/projects.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error('Failed to load projects');
+    const projects = await res.json();
+    grid.innerHTML = projects.map((p, i) => projectCardHTML(p, i)).join('');
+    // Observe newly added cards for reveal animations
+    grid.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  } catch (err) {
+    grid.innerHTML = '<p>Unable to load projects right now.</p>';
+    console.error(err);
+  }
+}
 
 // Populate hero skills and add click effect
 const heroSkills = ['Cybersecurity','Web App Security','JavaScript','UI Engineering','Performance'];
